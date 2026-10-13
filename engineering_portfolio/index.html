@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Electrical engineering portfolio featuring embedded systems, firmware, electronics, and hardware-software integration projects.">
+  <title>Rex Chong | Electrical Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Rex Chong home"><span class="brand-mark">RC</span><span>Rex Chong</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="assets/resume.pdf">Resume <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Electrical Engineering · Embedded Systems</p>
+        <h1>Making hardware and software <span class="text-gradient">work together.</span></h1>
+        <p class="hero-intro">I'm Rex, an electrical engineering student interested in embedded firmware, electronics, and the systems that connect them. I enjoy turning ideas into working prototypes—and figuring out why they don't work the first time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-icon">⌘</span> Firmware & low-level C</span>
+          <span><span class="meta-icon">⌁</span> Microcontrollers & electronics</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Abstract circuit-board inspired illustration">
+        <div class="art-glow"></div>
+        <div class="chip chip-main">
+          <span class="chip-label">SYSTEM STATUS</span>
+          <span class="chip-status"><span class="status-dot"></span> READY</span>
+          <div class="chip-grid">
+            <span>MCU</span><span>GPIO</span><span>ADC</span>
+            <span>UART</span><span>PWM</span><span>IRQ</span>
+          </div>
+          <div class="chip-footer"><span>HW ↔ SW</span><span>v1.0</span></div>
+        </div>
+        <span class="circuit-node node-a"></span><span class="circuit-node node-b"></span>
+        <span class="circuit-line line-a"></span><span class="circuit-line line-b"></span>
+        <span class="circuit-line line-c"></span>
+        <div class="floating-tag tag-top">01 / BUILD</div>
+        <div class="floating-tag tag-bottom">TEST · DEBUG · REPEAT</div>
+      </div>
+    </section>
+
+    <section class="metrics container" aria-label="Portfolio highlights">
+      <div><strong>04</strong><span>Featured projects</span></div>
+      <div><strong>MCU</strong><span>Firmware & peripherals</span></div>
+      <div><strong>HW + SW</strong><span>System integration</span></div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work / 01—04</p>
+            <h2>Projects built by <span class="text-gradient">doing.</span></h2>
+          </div>
+          <p class="section-intro">A selection of embedded, digital, and electronics projects. Open each case study for the implementation details and the engineering questions behind it.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual visual-oven">
+              <span class="visual-index">01</span>
+              <div class="oven-illustration" aria-hidden="true">
+                <div class="oven-top"></div><div class="oven-window"><span class="heat heat-one"></span><span class="heat heat-two"></span><span class="heat heat-three"></span></div>
+                <div class="oven-controls"><i></i><i></i><i></i></div>
+              </div>
+              <span class="visual-caption">THERMAL CONTROL / FSM</span>
+            </div>
+            <div class="project-content">
+              <div class="project-kicker"><span>Embedded firmware</span><span>2025</span></div>
+              <h3>Programmable Reflow Oven</h3>
+              <p>Converted a toaster oven into a programmable solder-reflow system with temperature acquisition, profile control, and user feedback.</p>
+              <div class="tags"><span>8051 Assembly</span><span>ADC</span><span>PWM</span><span>FSM</span></div>
+              <details class="case-study">
+                <summary>Read the case study <span aria-hidden="true">↗</span></summary>
+                <div class="case-body">
+                  <h4>Goal</h4>
+                  <p>Build a controllable reflow process with customizable temperature stages and clear system feedback.</p>
+                  <h4>Implementation</h4>
+                  <ul>
+                    <li>Implemented a finite-state machine for configurable reflow profiles using 8051 assembly.</li>
+                    <li>Read a thermocouple through cold-junction compensation and ADC-based temperature acquisition.</li>
+                    <li>Controlled heater power through PWM and a solid-state relay.</li>
+                    <li>Integrated LCD and speaker feedback, fault handling, an IR sensor, and motor-based automation.</li>
+                  </ul>
+                  <h4>Engineering focus</h4>
+                  <p>Embedded state management, sensor acquisition, temperature control, peripheral integration, and fault-aware behavior.</p>
+                  <p class="case-note">Add a photo of your assembled oven, a block diagram, and a plot of a measured reflow cycle here when available.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-robot">
+              <span class="visual-index">02</span>
+              <div class="robot-scene" aria-hidden="true"><div class="robot-body"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-wheel wheel-left"></span><span class="robot-wheel wheel-right"></span><span class="robot-claw"></span></div><div class="robot-path"></div><span class="robot-beacon"></span></div>
+              <span class="visual-caption">MOBILE ROBOTICS / BLUETOOTH</span>
+            </div>
+            <div class="project-content">
+              <div class="project-kicker"><span>Embedded systems</span><span>2025</span></div>
+              <h3>Magnetic Field Line-Following Robot</h3>
+              <p>A two-controller robot with autonomous path following, Bluetooth communication, and manual control features.</p>
+              <div class="tags"><span>PIC32</span><span>STM32</span><span>Bluetooth</span><span>PWM</span></div>
+              <details class="case-study">
+                <summary>Read the case study <span aria-hidden="true">↗</span></summary>
+                <div class="case-body">
+                  <h4>Goal</h4>
+                  <p>Build a robot and controller that can follow a magnetic path, report progress, and support both autonomous and manual operation.</p>
+                  <h4>Implementation</h4>
+                  <ul>
+                    <li>Used PIC32 on the controller and STM32 on the robot.</li>
+                    <li>Implemented joystick control and PWM-based speed control, plus reverse-path behavior.</li>
+                    <li>Added two-way Bluetooth for statistics, location, path selection, and CSV path loading from a PC.</li>
+                    <li>Integrated manual claw control, IR-triggered automatic pick/drop, battery indication, and controller audio feedback.</li>
+                  </ul>
+                  <h4>Engineering focus</h4>
+                  <p>Inter-controller communication, wireless data handling, motor control, mode management, and system feedback.</p>
+                  <p class="case-note">Add a robot photo, controller photo, and a simple communication / control block diagram here.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-tron">
+              <span class="visual-index">03</span>
+              <div class="tron-screen" aria-hidden="true"><div class="tron-score">PLAYER 01 <b>008</b></div><div class="tron-board"><span class="trail trail-blue"></span><span class="trail trail-orange"></span><span class="tron-pixel"></span></div><div class="tron-footer">PLAYER VS CPU <span>● LIVE</span></div></div>
+              <span class="visual-caption">DIGITAL LOGIC / INTERRUPTS</span>
+            </div>
+            <div class="project-content">
+              <div class="project-kicker"><span>Low-level programming</span><span>Personal / coursework</span></div>
+              <h3>Tron Lightcycle Game</h3>
+              <p>A retro-inspired game using memory-mapped I/O, timer and button interrupts, and a VGA pixel buffer.</p>
+              <div class="tags"><span>C</span><span>RISC-V Assembly</span><span>Interrupts</span><span>VGA</span></div>
+              <details class="case-study">
+                <summary>Read the case study <span aria-hidden="true">↗</span></summary>
+                <div class="case-body">
+                  <h4>Goal</h4>
+                  <p>Build a playable lightcycle-style game on a digital hardware platform, with input handling, score display, and collision logic.</p>
+                  <h4>Implementation</h4>
+                  <ul>
+                    <li>Used C and inline RISC-V assembly with memory-mapped peripherals.</li>
+                    <li>Used a machine-timer interrupt and push-button interrupt for game timing and input.</li>
+                    <li>Rendered the playfield through a VGA pixel buffer and used LEDs, switches, and seven-segment displays for I/O.</li>
+                    <li>Implemented obstacle/collision handling and a simple AI opponent.</li>
+                  </ul>
+                  <h4>Engineering focus</h4>
+                  <p>Interrupt-driven programming, hardware register access, display rendering, and real-time game-state updates.</p>
+                  <p class="case-note">Confirm the exact target-board configuration and add a gameplay screenshot before publishing.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-meter">
+              <span class="visual-index">04</span>
+              <div class="meter-device" aria-hidden="true"><div class="meter-screen"><span>CAPACITANCE</span><b>6.82 <small>nF</small></b><i>READY TO MEASURE</i></div><div class="meter-buttons"><i></i><i></i><i></i></div><div class="meter-label">COMPONENT METER</div></div>
+              <span class="visual-caption">MEASUREMENT / SERIAL DATA</span>
+            </div>
+            <div class="project-content">
+              <div class="project-kicker"><span>Instrumentation</span><span>Coursework</span></div>
+              <h3>PIC32 Component Meter</h3>
+              <p>A component-measurement system that combines PIC32 firmware with a Java desktop companion for serial logging and printing.</p>
+              <div class="tags"><span>PIC32MX130</span><span>C</span><span>ADC</span><span>UART</span><span>Java</span></div>
+              <details class="case-study">
+                <summary>Read the case study <span aria-hidden="true">↗</span></summary>
+                <div class="case-body">
+                  <h4>Goal</h4>
+                  <p>Measure electrical component values and make readings available on the device and in a desktop application.</p>
+                  <h4>Implementation</h4>
+                  <ul>
+                    <li>Measured signal period using the PIC32 core timer and used frequency-based calculations for capacitance and inductance.</li>
+                    <li>Used ADC readings for resistance measurement and an LM335 temperature sensor for capacitance temperature compensation.</li>
+                    <li>Displayed readings on an LCD and transmitted records over UART at 115200 baud.</li>
+                    <li>Built a Java Swing companion using jSerialComm to receive readings, retain selected values, and print a formatted report.</li>
+                  </ul>
+                  <h4>Engineering focus</h4>
+                  <p>Timer-based measurement, ADC sensing, serial protocols, and integration between embedded firmware and a desktop GUI.</p>
+                  <p class="case-note">Add your schematic and a validation table comparing readings against known components. Do not publish accuracy claims until supported by measurements.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">A little about me / 02</p>
+          <h2>Curious about what happens <span class="text-gradient">under the hood.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>I’m an electrical engineering student who enjoys working across the hardware–software boundary: configuring peripherals, writing firmware, measuring real signals, and bringing subsystems together into something usable.</p>
+          <p>I try to document not just what a project does, but also how it works, what I learned while debugging it, and how I verified the result.</p>
+          <div class="principles">
+            <div><span>01</span><div><strong>Understand the system</strong><p>Start with interfaces, constraints, and how each block affects the others.</p></div></div>
+            <div><span>02</span><div><strong>Test assumptions</strong><p>Use measurements and repeatable checks instead of relying on guesswork.</p></div></div>
+            <div><span>03</span><div><strong>Make it understandable</strong><p>Write code and documentation that another person can follow.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section toolkit-section" id="toolkit">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Tools & concepts / 03</p><h2>My engineering <span class="text-gradient">toolkit.</span></h2></div>
+          <p class="section-intro">A snapshot of technologies used across the projects above. Tailor this list to match the specific role you're applying for.</p>
+        </div>
+        <div class="toolkit-grid">
+          <div class="toolkit-card"><span class="toolkit-icon">⌘</span><h3>Programming</h3><p>C · 8051 Assembly · Java · RISC-V Assembly</p></div>
+          <div class="toolkit-card"><span class="toolkit-icon">▦</span><h3>Embedded & digital</h3><p>PIC32 · STM32 · DE10-Lite / FPGA coursework · GPIO · Timers · Interrupts</p></div>
+          <div class="toolkit-card"><span class="toolkit-icon">⌁</span><h3>Electronics & control</h3><p>ADC sensing · PWM · UART · Temperature acquisition · Motor control</p></div>
+          <div class="toolkit-card"><span class="toolkit-icon">↔</span><h3>Integration & debugging</h3><p>Bluetooth · Serial communication · Oscilloscope-based measurement · Hardware/software integration</p></div>
+        </div>
+        <p class="small-note">Only list tools and skills you can confidently discuss in an interview. Add specific IDEs, simulators, and lab equipment you have used.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">Contact / 04</p>
+        <h2>Have a project or opportunity in mind?</h2>
+        <p>I'm interested in opportunities involving embedded firmware, electronics, and hardware–software integration.</p>
+        <div class="contact-actions">
+          <!-- Replace the placeholder email and profile links before publishing. -->
+          <a class="button button-primary" href="mailto:your.email@example.com">Email me <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+        <p class="contact-hint">Remember to replace the placeholder links before publishing.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">RC</span><span>Rex Chong</span></a><span>Designed to document the work behind the result.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <script>
+    // Small mobile-navigation toggle; the rest of the site works without JavaScript.
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!expanded));
+      navLinks.classList.toggle('is-open', !expanded);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuButton.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('is-open');
+      });
+    });
+  </script>
+</body>
+</html>
