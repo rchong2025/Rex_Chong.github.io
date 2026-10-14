@@ -321,10 +321,10 @@
               <span class="visual-caption">AC power analyzer </span>
             </div>
             <div class="project-content">
-              <div class="project-kicker"><span>Instrumentation</span><span>Coursework</span></div>
-              <h3>EFM8 Frequency &amp; Capacitance Meter</h3>
-              <p>An EFM8LB1 program that counts an external signal with a hardware timer, calculates capacitance from the measured frequency, and reports it on an LCD and a serial terminal.</p>
-              <div class="tags"><span>EFM8LB1</span><span>C</span><span>Timer/Counter</span><span>UART</span><span>LCD</span></div>
+              <div class="project-kicker"><span>Embedded systems</span><span>Coursework</span></div>
+              <h3>Phasor Measurement &amp; Calculator</h3>
+              <p>An EFM8LB1 instrument that measures the amplitude, frequency, and phase difference of two signals, then lets you add, subtract, and multiply the stored phasors.</p>
+              <div class="tags"><span>EFM8LB1</span><span>C</span><span>14-bit ADC</span><span>Timer 2</span><span>LCD</span></div>
               <div class="case-wrap">
 
               <a class="github-link" href="https://github.com/rchong2025/Phasor-Calculator-and-Signal-Analyzer" target="_blank" rel="noreferrer" aria-label="EFM8 Frequency &amp; Capacitance Meter on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a>
@@ -332,17 +332,18 @@
                 <summary>More details</summary>
                 <div class="case-body">
                   <h4>Goal</h4>
-                  <p>Measure the frequency of an external signal and convert it into a capacitance reading with selectable units.</p>
+                  <p>Measure a reference signal and a second signal, report their amplitudes, frequency, and relative phase, and perform basic phasor arithmetic on the results.</p>
                   <h4>Implementation</h4>
                   <ul>
-                    <li>Configured Timer 0 as a 16-bit external counter on pin T0 and counted pulses over a 1-second gate, tracking overflows in software.</li>
-                    <li>Used Timer 3 for microsecond and millisecond delays, including the timing the LCD requires.</li>
-                    <li>Calculated capacitance from the measured frequency and let a push button switch the display between pF and nF.</li>
-                    <li>Drove a 16x2 LCD in 4-bit mode and printed the same readings to a serial terminal at 115200 baud.</li>
-                    <li>Added buttons to change the terminal text and background colors using ANSI escape codes.</li>
+                    <li>Sampled two analog inputs with the EFM8LB1's 14-bit ADC, referenced to VDD.</li>
+                    <li>Detected zero crossings in firmware and used Timer 2 to time the signal period and the delay between the two signals, giving frequency and phase.</li>
+                    <li>Tracked each signal's peak with a slow decay so the amplitude readout follows changes.</li>
+                    <li>Stored measurements in four slots chosen through digital inputs, with buttons to save, add, subtract, and multiply phasors.</li>
+                    <li>Converted between polar and rectangular form using sin, cos, sqrt, and atan2 routines written from series and iterative approximations.</li>
+                    <li>Showed live or stored results on a 16x2 LCD and a serial terminal, with a button to switch views.</li>
                   </ul>
                   <h4>Engineering focus</h4>
-                  <p>Hardware timer/counter configuration, frequency measurement, peripheral setup on the EFM8 crossbar, and user-interface handling in C.</p>
+                  <p>Time-based phase measurement, ADC sampling, numerical approximation on a resource-limited microcontroller, and user-interface handling in C.</p>
 
                   <div class="case-media">
                       <figure>
@@ -356,7 +357,8 @@
               </div>
             </div>
           </article>
-        </div>
+          
+         </div>
       </div>
     </section>
 
