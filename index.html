@@ -76,21 +76,20 @@
         <div class="project-grid">
           
           <article class="project-card">
-            <div class="project-visual visual-oven">
-              <span class="visual-index">01</span>
-              <div class="oven-illustration" aria-hidden="true">
-                <div class="oven-top"></div><div class="oven-window"><span class="heat heat-one"></span><span class="heat heat-two"></span><span class="heat heat-three"></span></div>
-                <div class="oven-controls"><i></i><i></i><i></i></div>
-              </div>
-              <span class="visual-caption">THERMAL CONTROL / FSM</span>
-            </div>
+            
+            <div class="project-visual">
+               <span class="visual-index">01</span>
+               <img src="assets/reflow_oven.png" alt="Assembled reflow oven">
+               <span class="visual-caption">THERMAL CONTROL / FSM</span>
+           </div>
+            
             <div class="project-content">
               <div class="project-kicker"><span>Embedded firmware</span><span>course project</span></div>
               <h3>Programmable Reflow Oven</h3>
               <p>Converted a toaster oven into a programmable solder-reflow system with temperature acquisition, profile control, and user feedback.</p>
               <div class="tags"><span>8051 Assembly</span><span>ADC</span><span>PWM</span><span>FSM</span></div>
               <div class="case-wrap">
-              <!-- Replace with the real repo link -->
+                
               <a class="github-link" href="https://github.com/rchong2025/ELEC291-project-1---Reflow_Oven_Controller" target="_blank" rel="noreferrer" aria-label="Programmable Reflow Oven on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a>
               <details class="case-study">
                 <summary>More details</summary>
@@ -108,10 +107,6 @@
                   <p>Embedded state management, sensor acquisition, temperature control, peripheral integration, and fault-aware behavior.</p>
                   
                   <div class="case-media">
-                      <figure>
-                        <img src="assets/reflow_oven.png" alt="Assembled reflow oven">
-                        <figcaption>Assembled reflow oven</figcaption>
-                      </figure>
 
                       <figure>
                         <img src="assets/reflow_board.png" alt="Assembled reflow oven board">
@@ -136,11 +131,13 @@
           </article>
 
           <article class="project-card">
+            
             <div class="project-visual visual-robot">
               <span class="visual-index">02</span>
-              <div class="robot-scene" aria-hidden="true"><div class="robot-body"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-wheel wheel-left"></span><span class="robot-wheel wheel-right"></span><span class="robot-claw"></span></div><div class="robot-path"></div><span class="robot-beacon"></span></div>
+              <img src="assets/robot_remote.png" alt="Assembled robot with controller">
               <span class="visual-caption">MOBILE ROBOTICS / BLUETOOTH</span>
             </div>
+            
             <div class="project-content">
               <div class="project-kicker"><span>Embedded systems</span><span>course project</span></div>
               <h3>Magnetic Field Line-Following Robot</h3>
@@ -165,10 +162,6 @@
                   <p>Inter-controller communication, wireless data handling, motor control, mode management, and system feedback.</p>
                   
                   <div class="case-media">
-                      <figure>
-                        <img src="assets/robot_remote.png" alt="Assembled robot with controller">
-                        <figcaption>Assembled robot with controller</figcaption>
-                      </figure>
 
                       <figure>
                         <img src="assets/robot_telemetry.png" alt="Python telemetry screen">
@@ -193,11 +186,20 @@
           </article>
 
           <article class="project-card">
+            
             <div class="project-visual visual-tron">
               <span class="visual-index">03</span>
-              <div class="tron-screen" aria-hidden="true"><div class="tron-score">PLAYER 01 <b>008</b></div><div class="tron-board"><span class="trail trail-blue"></span><span class="trail trail-orange"></span><span class="tron-pixel"></span></div><div class="tron-footer">PLAYER VS CPU <span>● LIVE</span></div></div>
+              
+                   <!--
+                  <p class="case-note">Confirm the exact target-board configuration and add a gameplay screenshot before publishing.</p>
+                  NOTE: find a picture of this lab... eventually?
+                  -->
+              <img src="assets/pretty.jpg" alt="Python telemetry screen">
+              <figcaption>Temporary replacement until I find a proper image</figcaption>
+              
               <span class="visual-caption">DIGITAL LOGIC / INTERRUPTS</span>
             </div>
+            
             <div class="project-content">
               <div class="project-kicker"><span>Low-level programming</span><span>Coursework</span></div>
               <h3>Tron Lightcycle Game</h3>
@@ -221,11 +223,6 @@
                   <h4>Engineering focus</h4>
                   <p>Interrupt-driven programming, hardware register access, display rendering, and real-time game-state updates.</p>
                   
-                  <!--
-                  <p class="case-note">Confirm the exact target-board configuration and add a gameplay screenshot before publishing.</p>
-                  NOTE: find a picture of this lab... eventually?
-                  -->
-                  
                 </div>
               </details>
               </div>
@@ -233,11 +230,13 @@
           </article>
 
           <article class="project-card">
+            
             <div class="project-visual visual-meter">
               <span class="visual-index">04</span>
-              <div class="meter-device" aria-hidden="true"><div class="meter-screen"><span>CAPACITANCE</span><b>6.82 <small>nF</small></b><i>READY TO MEASURE</i></div><div class="meter-buttons"><i></i><i></i><i></i></div><div class="meter-label">COMPONENT METER</div></div>
+              <img src="assets/ELEC291_lab6.jpg" alt="Assembled circuit">
               <span class="visual-caption">MEASUREMENT / SERIAL DATA</span>
             </div>
+            
             <div class="project-content">
               <div class="project-kicker"><span>Instrumentation</span><span>Coursework</span></div>
               <h3>Component Meter</h3>
@@ -260,23 +259,19 @@
                   </ul>
                   <h4>Engineering focus</h4>
                   <p>Timer-based measurement, ADC sensing, serial protocols, and integration between embedded firmware and a desktop GUI.</p>
-                  <div class="case-media">
-                      <figure>
-                        <img src="assets/ELEC291_lab6.jpg" alt="Assembled circuit">
-                        <figcaption>Full circuit of the component meter</figcaption>
-                      </figure>                
-                  </div>
               </details>
               </div>
             </div>
           </article>
 
           <article class="project-card">
+            
             <div class="project-visual visual-thermo">
               <span class="visual-index">05</span>
-              <div class="thermo-device" aria-hidden="true"><div class="thermo-screen"><span>TEMP.</span><b>24.85 <small>°C</small></b></div><svg viewBox="0 0 120 30" preserveAspectRatio="none"><polyline points="0,22 12,20 24,23 36,15 48,17 60,9 72,12 84,6 96,10 108,5 120,7"/></svg><div class="thermo-units"><i class="on">C</i><i>F</i><i>K</i></div></div>
+              <img src="assets/ELEC291_lab3.jpg" alt="assembled circuitry of the temperature sensor">
               <span class="visual-caption">ADC / UART / MATLAB</span>
             </div>
+            
             <div class="project-content">
               <div class="project-kicker"><span>Embedded firmware</span><span>Coursework</span></div>
               <h3>Temperature sensor </h3>
@@ -301,13 +296,6 @@
                   <h4>Engineering focus</h4>
                   <p>ADC acquisition, fixed-point arithmetic in assembly, button debouncing, serial communication, and PC-side data visualization.</p>
 
-                  <div class="case-media">
-                      <figure>
-                        <img src="assets/ELEC291_lab3.jpg" alt="assembled circuitry of the temperature sensor">
-                        <figcaption>Full circuitry of the temperature sensor</figcaption>
-                      </figure>
-                  </div>
-
                 </div>
               </details>
               </div>
@@ -315,11 +303,13 @@
           </article>
 
           <article class="project-card">
+            
             <div class="project-visual visual-freq">
               <span class="visual-index">06</span>
-              <div class="freq-scope" aria-hidden="true"><svg viewBox="0 0 160 60" preserveAspectRatio="none"><polyline points="0,45 0,15 20,15 20,45 40,45 40,15 60,15 60,45 80,45 80,15 100,15 100,45 120,45 120,15 140,15 140,45 160,45"/></svg><div class="freq-readout"><span>f = ——— Hz</span><span>C = ——— nF</span></div></div>
+              <img src="assets/ELEC291_lab5.jpg" alt="phasor measurement circuitry">
               <span class="visual-caption">AC power analyzer </span>
             </div>
+            
             <div class="project-content">
               <div class="project-kicker"><span>Embedded systems</span><span>Coursework</span></div>
               <h3>Phasor Measurement &amp; Calculator</h3>
@@ -345,13 +335,6 @@
                   <h4>Engineering focus</h4>
                   <p>Time-based phase measurement, ADC sampling, numerical approximation on a resource-limited microcontroller, and user-interface handling in C.</p>
 
-                  <div class="case-media">
-                      <figure>
-                        <img src="assets/ELEC291_lab5.jpg" alt="phasor measurement circuitry">
-                        <figcaption>Full circuit of the phasor meter</figcaption>
-                      </figure>
-                  </div>
-
                 </div>
               </details>
               </div>
@@ -359,15 +342,13 @@
           </article>
 
           <article class="project-card">
+            
             <div class="project-visual" style="background: radial-gradient(ellipse at 50% 52%, rgba(104,225,232,.11), transparent 58%), #111d27;">
               <span class="visual-index">07</span>
-              <svg viewBox="0 0 180 130" width="190" height="137" aria-hidden="true" fill="none">
-                <line x1="12" y1="110" x2="172" y2="110" stroke="#4f6672" stroke-width="1"/>
-                <rect x="20" y="20" width="11" height="90" rx="2" fill="#68e1e8" opacity="1.00"/><rect x="37" y="27" width="11" height="83" rx="2" fill="#68e1e8" opacity="0.93"/><rect x="54" y="34" width="11" height="76" rx="2" fill="#68e1e8" opacity="0.86"/><rect x="71" y="41" width="11" height="69" rx="2" fill="#68e1e8" opacity="0.79"/><rect x="88" y="48" width="11" height="62" rx="2" fill="#68e1e8" opacity="0.72"/><rect x="105" y="55" width="11" height="55" rx="2" fill="#68e1e8" opacity="0.65"/><rect x="122" y="62" width="11" height="48" rx="2" fill="#68e1e8" opacity="0.58"/><rect x="139" y="69" width="11" height="41" rx="2" fill="#68e1e8" opacity="0.51"/><rect x="156" y="76" width="11" height="34" rx="2" fill="#68e1e8" opacity="0.44"/>
-                <polyline points="25,22 42,24 59,32 76,40 93,49 110,60 127,70 144,80 161,90" stroke="#b4f27c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <img src="assets/Amort.png" alt="testing">
               <span class="visual-caption">NUMERICAL METHODS / JAVAFX</span>
             </div>
+            
             <div class="project-content">
               <div class="project-kicker"><span>Desktop software</span><span>Personal</span></div>
               <h3>Loan Amortization Calculator</h3>
@@ -392,12 +373,6 @@
                   <p>Object-oriented design across separate calculation, validation, output, and UI classes, numerical root finding, date arithmetic, desktop GUI development, and packaging software for distribution.</p>
                   <h4>Regarding source code</h4>
                   <p>the source code uses proprietary code and will not be avalible</p>
-                  <div class="case-media">
-                      <figure>
-                        <img src="assets/Amort.png" alt="testing">
-                        <figcaption>Image of the working application</figcaption>
-                      </figure>
-                  </div>
 
                 </div>
               </details>
