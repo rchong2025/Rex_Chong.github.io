@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --bg: #0b1117;
-  --panel: #111a23;
-  --panel-2: #16222d;
-  --text: #edf4f8;
-  --muted: #9aabb8;
+  --bg: #160b17;
+  --panel: #221123;
+  --panel-2: #2d162d;
+  --text: #f8edf6;
+  --muted: #b89ab7;
   --line: rgba(185, 208, 222, 0.14);
   --cyan: #68e1e8;
   --green: #f7cac9;
