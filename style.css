@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
 :root {
   --bg: #0b1117;
   --panel: #111a23;
@@ -27,7 +29,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .nav-resume { color: var(--text) !important; padding: 9px 13px; border: 1px solid var(--line); border-radius: 8px; }
 .menu-toggle { display: none; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font: inherit; }
 .hero { min-height: 620px; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 48px; padding-top: 86px; padding-bottom: 82px; }
-.hero-name { margin: 0 0 22px; font-size: clamp(72px, 12vw, 160px); font-weight: 800; line-height: .95; letter-spacing: -.07em; color: var(--text); }
+.hero-name { margin: 0 0 22px; font-size: clamp(52px, 8.5vw, 108px); font-weight: 800; line-height: .95; letter-spacing: -.07em; color: var(--text); }
 .eyebrow { color: var(--cyan); font: 500 11px 'DM Mono', monospace; letter-spacing: .13em; text-transform: uppercase; margin: 0 0 20px; }
 .status-dot { display: inline-block; width: 7px; height: 7px; background: var(--green); border-radius: 50%; box-shadow: 0 0 12px rgba(180,242,124,.5); margin-right: 7px; vertical-align: 1px; }
 h1, h2, h3, p { margin-top: 0; }
@@ -103,6 +105,17 @@ h1 { font-size: clamp(42px, 5.5vw, 70px); line-height: 1.08; letter-spacing: -.0
 .meter-device { width: 190px; padding: 14px; border: 2px solid #657c7b; border-radius: 13px; background: linear-gradient(145deg, #324544, #172a2a); box-shadow: 0 20px 35px rgba(0,0,0,.3); transform: rotate(4deg); }
 .meter-screen { padding: 11px; border-radius: 5px; background: #b7c8a3; color: #233427; font-family: 'DM Mono', monospace; box-shadow: inset 0 0 8px rgba(0,0,0,.18); }
 .meter-screen span, .meter-screen i { display: block; font-size: 7px; font-style: normal; }.meter-screen b { display: block; font-size: 22px; margin-block: 5px; }.meter-screen small { font-size: 10px; }.meter-buttons { display: flex; gap: 12px; justify-content: center; margin: 14px 0 8px; }.meter-buttons i { width: 12px; height: 12px; border-radius: 50%; background: #98a8a4; border: 2px solid #405553; }.meter-label { text-align: center; color: #b6c9c1; font: 8px 'DM Mono', monospace; letter-spacing: .1em; }
+.visual-thermo { background: radial-gradient(ellipse at 50% 55%, rgba(255,158,87,.13), transparent 58%), #17201f; }
+.thermo-device { width: 190px; padding: 14px; border: 1px solid rgba(255,158,87,.45); border-radius: 13px; background: #0d151c; box-shadow: 0 20px 35px rgba(0,0,0,.3); transform: rotate(-3deg); }
+.thermo-screen span { display: block; color: #8ca3b1; font: 8px 'DM Mono', monospace; letter-spacing: .1em; }
+.thermo-screen b { display: block; color: #ffb36b; font: 500 24px 'DM Mono', monospace; line-height: 1.3; }.thermo-screen small { font-size: 12px; }
+.thermo-device svg { display: block; width: 100%; height: 34px; margin-block: 8px; }.thermo-device polyline { fill: none; stroke: var(--cyan); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.thermo-units { display: flex; gap: 8px; justify-content: center; }.thermo-units i { display: grid; place-items: center; width: 24px; height: 20px; border: 1px solid rgba(180,205,220,.25); border-radius: 5px; color: #8ca3b1; font: normal 10px 'DM Mono', monospace; }.thermo-units i.on { color: #0d151c; background: var(--green); border-color: var(--green); }
+.visual-freq { background: radial-gradient(ellipse at 50% 52%, rgba(104,225,232,.12), transparent 58%), #101b22; }
+.freq-scope { width: 200px; padding: 12px; border: 2px solid #4f6672; border-radius: 12px; background: #07121a; box-shadow: 0 20px 35px rgba(0,0,0,.3); transform: rotate(3deg); }
+.freq-scope svg { display: block; width: 100%; height: 64px; border: 1px solid rgba(104,225,232,.2); background-image: linear-gradient(rgba(104,225,232,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(104,225,232,.08) 1px, transparent 1px); background-size: 16px 16px; }
+.freq-scope polyline { fill: none; stroke: var(--green); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.freq-readout { display: flex; justify-content: space-between; margin-top: 9px; color: var(--cyan); font: 9px 'DM Mono', monospace; }
 .project-content { padding: 24px; }
 .project-kicker { display: flex; justify-content: space-between; gap: 12px; color: #8ca0ad; font: 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; }
 .project-kicker span:first-child { color: var(--green); }
@@ -118,6 +131,8 @@ h1 { font-size: clamp(42px, 5.5vw, 70px); line-height: 1.08; letter-spacing: -.0
 .github-link:hover, .github-link:focus-visible { color: var(--cyan); }
 /* Project photos / diagrams */
 .case-body .case-media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 20px; }
+.case-body .case-media figure { margin: 0; min-width: 0; }
+.case-body .case-media figcaption { margin-top: 6px; color: var(--muted); font-size: 11px; line-height: 1.5; text-align: center; }
 .case-body .case-media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #0b1117; border: 1px solid var(--line); border-radius: 8px; }
 /* Hero portrait */
 .hero > .case-media { display: grid; place-items: center; min-width: 0; }
