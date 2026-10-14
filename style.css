@@ -27,7 +27,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .nav-resume { color: var(--text) !important; padding: 9px 13px; border: 1px solid var(--line); border-radius: 8px; }
 .menu-toggle { display: none; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font: inherit; }
 .hero { min-height: 620px; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 48px; padding-top: 86px; padding-bottom: 82px; }
-.hero-name { margin: 0 0 22px; font-size: clamp(52px, 8.5vw, 108px); font-weight: 800; line-height: .95; letter-spacing: -.07em; color: var(--text); }
+.hero-name { margin: 0 0 22px; font-size: clamp(72px, 12vw, 160px); font-weight: 800; line-height: .95; letter-spacing: -.07em; color: var(--text); }
 .eyebrow { color: var(--cyan); font: 500 11px 'DM Mono', monospace; letter-spacing: .13em; text-transform: uppercase; margin: 0 0 20px; }
 .status-dot { display: inline-block; width: 7px; height: 7px; background: var(--green); border-radius: 50%; box-shadow: 0 0 12px rgba(180,242,124,.5); margin-right: 7px; vertical-align: 1px; }
 h1, h2, h3, p { margin-top: 0; }
