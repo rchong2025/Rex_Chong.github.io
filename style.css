@@ -1,25 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Base */
+
+  /* Base - normal
   --bg: #160b17;
-  --bg-alt: #1c0f1f;       /* alternating sections, mobile menu */
-  --panel: #221123;        /* cards */
+  --bg-alt: #1c0f1f;    
+  --panel: #221123;       
   --panel-2: #2d162d;
   --text: #f8edf6;
   --muted: #b89ab7;
-  --dim: #8f7690;          /* small, quieter text */
-  --soft: #cdb6cc;         /* light secondary text */
+  --dim: #8f7690;         
+  --soft: #cdb6cc;         
   --line: rgba(255, 208, 222, 0.14);
-  /* Accents */
   --accent: #e868d2;
   --accent-2: #f7cac9;
+  */
+
+  /* base - blue */
+    --bg: #0b1117;
+  --bg-alt: #0b1117;
+  --panel: #111a23;
+  --panel-2: #16222d;
+  --text: #edf4f8;
+  --muted: #9aabb8;
+  --dim: #8f7690;   
+  --soft: #cdb6cc;
+  --line: rgba(185, 208, 222, 0.14);
+  --accent: #68e1e8;
+  --accent-2: #b4f27c;
+
   --accent-rgb: 232, 104, 225;   /* same as --accent, for glows and borders */
   --accent-2-rgb: 180, 124, 242; /* soft glow colour */
   --bg-rgb: 22, 11, 23;          /* same as --bg, for translucent panels */
   --on-accent: #1a0a1c;          /* text on an accent-coloured background */
   --max-width: 1160px;
 }
+
 /* Optional alternate scheme: add data-theme="ocean" to <body> to try it */
 :root[data-theme="ocean"] {
   --bg: var(--bg); --bg-alt: var(--bg-alt); --panel: #111a23; --panel-2: #16222d;
